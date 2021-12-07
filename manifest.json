@@ -1,0 +1,20 @@
+{
+  "name": "Hide play button for udemy",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This scripts work that hide  play button  located in the center  of video when you play udemy",
+  "icons": {
+	      "16": "16.png",
+   	      "48": "48.png",
+    	      "128": "128.png"
+	  },
+  "content_scripts": [{
+    "matches": ["https://www.udemy.com/*"],
+    "js": [
+      "jquery-3.6.0.min.js",
+      "video_play_button_hiden.js"  
+    ],
+      "run_at": "document_end",
+      "all_frames": true
+  }]
+}
