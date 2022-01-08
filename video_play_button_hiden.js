@@ -1,21 +1,13 @@
-window.addEventListener("load", main, false);
+//window.addEventListener('load', main, true);
+const jsInitCheckTimer=setInterval(main,1000);
 function main(){
-    const jsInitCheckTimer=setInterval(jsLoaded,1000);
-    jsLoaded_kye;
-
+//    const jsInitCheckTimer=setInterval(jsLoaded,1000);
     function jsLoaded(){
         if(document.querySelector("[class^='video-player--center']") != null){
             clearInterval(jsInitCheckTimer);
             $('div[class*="video-player--center-"]').hide();
+            //console.log("発火")
         }
-    }
 
-    function jsLoaded_kye(){
-        document.addEventListener("keydown",event => {
-            if(event.code =="Enter"){
-                $('div[class*="video-player--center-"]').hide();
-            }
-        })
     }
 }
-
