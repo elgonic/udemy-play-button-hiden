@@ -1,7 +1,7 @@
 //window.addEventListener('load', main, true);
 const jsInitCheckTimer=setInterval(main,1000);
 function main(){
-//    const jsInitCheckTimer=setInterval(jsLoaded,1000);
+    const jsInitCheckTimer=setInterval(jsLoaded,1);
     function jsLoaded(){
         if(document.querySelector("[class^='video-player--center']") != null){
             clearInterval(jsInitCheckTimer);
