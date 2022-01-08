@@ -1,6 +1,6 @@
 {
   "name": "Hide play button for udemy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "This scripts work that hide  play button  located in the center  of video when you play udemy",
   "icons": {
